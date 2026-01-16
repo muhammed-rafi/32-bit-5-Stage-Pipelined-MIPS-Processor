@@ -19,6 +19,7 @@ module alu_control (
                     default:   alu_ctrl = 4'b0000;
                 endcase
             end
+            2'b11: alu_ctrl = 4'b0011; // XORI
             default: alu_ctrl = 4'b0000;
         endcase
     end
